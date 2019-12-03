@@ -1,8 +1,8 @@
 package edu.kis.vh.nursery.factory;
 
+import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 import edu.kis.vh.nursery.FIFORhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
-import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 
 public class DefaultRhymersFactory implements RhymersFactory {
 
@@ -26,4 +26,5 @@ public class DefaultRhymersFactory implements RhymersFactory {
         return new HanoiRhymer();
     }
 
+//    Alt + strzałki służą do przełączania pomiędzy plikami i wracania do poprzednio edytowanych plików
 }
