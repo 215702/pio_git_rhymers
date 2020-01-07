@@ -5,10 +5,8 @@ package edu.kis.vh.nursery.list;
  */
 public class IntLinkedList {
 
-	public static final int NEGATIVE_ONE = -1;
-	Node last;
-	int i;
-
+	private static final int NEGATIVE_ONE = -1;
+	private Node last;
 	/**
 	 * Metoda wypychająca element i na koniec listy
 	 * @param i element który chcemy dodać do listy
@@ -44,7 +42,6 @@ public class IntLinkedList {
 			return NEGATIVE_ONE;
 		return last.value;
 	}
-
 	/**
 	 * Metoda usuwa ostatni element listy i zwraca go
 	 * @return ostatni element, lub -1 gdy lista jest pusta
@@ -56,5 +53,4 @@ public class IntLinkedList {
 		last = last.prev;
 		return ret;
 	}
-
 }
