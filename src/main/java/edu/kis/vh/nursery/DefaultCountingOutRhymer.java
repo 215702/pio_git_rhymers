@@ -18,18 +18,18 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public boolean isFull() {
-		return total == 11;
+		return total == ARRAY_SIZE - 1;
 	}
 
 	protected int peekaboo() {
 		if (callCheck())
-			return NEGATIVE_ONE;
+			return -1;
 		return numbers[total];
 	}
 
 	public int countOut() {
 		if (callCheck())
-			return NEGATIVE_ONE;
+			return -1;
 		return numbers[total--];
 	}
 
